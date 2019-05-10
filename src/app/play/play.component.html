@@ -1,0 +1,60 @@
+<!--Developer:Sahana-->
+<!--Created on:6/05/2019-->
+<!--component name:app-->
+<!---purpose:online gaming division-->
+
+        <div class="col-lg-12">
+           <h2> Welcome to GameCity! Your Card Balance Amount is {{amount}}</h2>
+<!--display table -->
+<table class="table table-sm table-dark">
+               <tr>
+               <td>Id</td>
+               <td>Game Name</td>
+               <td>price</td>
+               
+            </tr>
+            <tr>
+                    <td>1)</td>
+                    <td>Shooting</td>
+                    <td>Rs 100</td>
+                    <td> <a href="">playnow</a></td>
+                </tr>
+               <tr>
+                    <td>3)</td>
+                    <td>Angry Birds</td>
+                    <td>Rs 95</td>
+                    <td> <a href="">playnow</a></td>
+                </tr>
+                    <tr>
+                            <td>4)</td>
+                    <td>Temple Run</td>
+                    <td>Rs 200</td>
+                    <td> <a href="">playnow</a></td>
+                        </tr>
+                            <tr>
+                                    <td>5)</td>
+                                    <td>Bike Race</td>
+                                    <td>Rs 90</td>
+                                    <td> <a href="">playnow</a></td>
+                                </tr>
+
+                                    <tr>
+                                            <td>5)</td>
+                                            <td>Air Control</td>
+                                            <td>Rs 800</td>
+                                            <td> <a href="">playnow</a></td>
+                                        </tr>
+           </table>
+                <table class="table table-sm table-dark">
+                  <tbody>
+             <!-- display table by using foreach loop -->
+               <tr *ngFor="let obj of games ">
+                <td>{{obj.id}})</td>
+                 <td>{{obj.gName}}</td>
+                   <td>{{obj.gprice}}</td>
+                    <td><a href="">PlayNow</a></td>
+            </tr>
+     </tbody>
+</table></div>
+<br/><br/>
+
